@@ -24,9 +24,10 @@ Objetivos da Aplicação:
 
         3.2 - Cliente
 
-        Entidade que herda de pessoa e representa os clientes do buffet, ou seja, as pessoas que irão realizar os eventos organizados pela empresa.
+        Entidade que herda de pessoa e representa os clientes do buffet, ou seja, as pessoas que irão realizar os eventos organizados pela empresa.um cliente pode estar ter Status Ativo ou nao Ativo que diz respeito a se ele esta contratando algum servico do buffet no momento.
 
         Atributos: 
+        CPF (Atributo Identificador Herdado de pessoa)
         Status(Multivalorado) 
         ID dos eventos realizados(Multivalorado)
 
@@ -38,7 +39,7 @@ Objetivos da Aplicação:
 
 	    Atributos:
         Data
-        Código de identificação (Atributo Identificador)
+        CPF (Atributo indentificador do cliente)
         Número de convidados 
         Local/endereço (Atributo Composto que se subdivide em Rua, Número, Complemento, Bairro, Cidade, Estado, País, CEP) (Atributo Composto)
         Valor cobrado ao cliente
@@ -56,12 +57,14 @@ Objetivos da Aplicação:
 	
 	    3.5 - Staff
 	
-        O staff herda a entidade Pessoa e representa todas pessoas responsáveis por prestar serviços no dia do evento, como garçons e cozinheiros.
+        O staff herda a entidade Pessoa e representa todas pessoas responsáveis por prestar serviços no dia do evento, como garçons e cozinheiros.O staff pode ter varios tipos de contrato como por exemplo tercerizado.
 
         Atributos:
+        CPF (Atributo Identificador Herdado de pessoa)
         Função ( Atributo Multivalorado)
         Salário
         Tipo de contrato ( Atributo Multivalorado)
+        Supervisor 
 
 	
         3.6 - Alimentos
@@ -91,6 +94,7 @@ Objetivos da Aplicação:
 	    Entidade fraca que Corresponde aos convidados pelo cliente
 	
 	    Atributos:
+        CPF (Atributo indentificador do cliente)
         Nome (Atributo discriminador)
         Idade
 
@@ -132,13 +136,13 @@ Objetivos da Aplicação:
 
         4.6 - Alocar
 
-        O staff pode ser alocado quando o evento presta serviço,e quando um staff e alocado o evento presta um serviço.
+        O staff pode ser alocado quando o evento presta serviço,e quando um staff e alocado o evento esta prestando um serviço.
 
         Cardinalidade : 1:N
 
         4.7 - Prestar
 
-        Um evento vai prestar um serviço,e o serviço só é prestado por evento.
+        Entidade associativa onde um evento vai prestar um serviço,e o serviço só é prestado por evento.
 
         Cardinalidade : 1:1
 
