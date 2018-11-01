@@ -59,15 +59,25 @@ public class TelaT extends JFrame {
 		btnPessoas.setBounds(32, 25, 97, 25);
 		contentPane.add(btnPessoas);
 		
+		/**
+		 * TODO adicionar consultas possíveis
+		*/		
 		JComboBox comboBox = new JComboBox();
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Listar Clientes", "Listar Eventos", "Listar Endere\u00E7os", "Pessoa + Endere\u00E7o"}));
 		comboBox.setToolTipText("");
 		comboBox.setBounds(432, 58, 147, 22);
 		contentPane.add(comboBox);
 		
+		/**
+		 * TODO adicionar acoes
+		*/
 		JButton btnConsultar = new JButton("Consultar");
 		btnConsultar.setBounds(589, 57, 97, 25);
 		contentPane.add(btnConsultar);
+		
+		/**
+		 * acao do botao de teste, exibe lista com nomes da tabela pessoa
+		*/
 		btnPessoas.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				DataSource dataSource = new DataSource();
