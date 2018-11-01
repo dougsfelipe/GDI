@@ -10,10 +10,10 @@ menu iniciar.
 - Menu iniciar -> Executar linhas de comando SQL
 - Digite o comandos:
 	1. connect system
-		digite a senha.
-	2. alter user account unlock;
-	3. alter user gdi indentified by gdi;
-	4. connect gdi/gdi 
+	2. digite a senha para system
+	3. alter user account unlock;
+	4. alter user gdi indentified by gdi;
+	5. connect gdi/gdi 
 - Obs: usei "gdi" como usuário e senha criados no passo 1.
 - Agora basta seguir os códigos do projeto java.
 
