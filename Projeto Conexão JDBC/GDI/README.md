@@ -14,7 +14,7 @@ painel de controle.
 	2. alter user account unlock;
 	3. alter user gdi indentified by gdi;
 	4. connect gdi/gdi 
-       obs: utilizei "gdi" como usuário e senha criados no passo 1.
+- Obs: usei "gdi" como usuário e senha criados no passo 1.
 - Agora basta seguir os códigos do projeto java.
 
 
