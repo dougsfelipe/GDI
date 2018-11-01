@@ -2,7 +2,7 @@
 1 - Para adicionar o bd no oracle database express:
 
 - Execute o "Conceitos Básicos do Oracle Database 11g Express Edition" via área de trabalho ou
-painel de controle.
+menu iniciar.
 - Crie o banco, nome de usuário e senha para o banco, seguindo esse video: https://www.youtube.com/watch?v=3n16GCFT39o
 
 2 - Para fazer a conexão com o jdbc:
