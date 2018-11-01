@@ -1,4 +1,4 @@
-###Criando BD
+### Criando BD
 1 - Para adicionar o bd no oracle database express:
 
 - Execute o "Conceitos Básicos do Oracle Database 11g Express Edition" via área de trabalho ou
@@ -18,7 +18,7 @@ painel de controle.
 - Agora basta seguir os códigos do projeto java.
 
 
-###Camadas
+### Camadas
 
 dao - Data access objects, realizam a conexão. Classe DataSource realiza a conexão e fornece para as demais classes DAO.
 view - interface com usuário 
