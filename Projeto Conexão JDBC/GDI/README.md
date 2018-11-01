@@ -20,6 +20,6 @@ painel de controle.
 
 ### Camadas
 
-1.dao - Data access objects, realizam a conexão. Classe DataSource realiza a conexão e fornece para as demais classes DAO.
-2.view - interface com usuário 
-3.model - Classes de entidades
+1 - dao -> Data access objects, realizam a conexão. Classe DataSource realiza a conexão e fornece para as demais classes DAO.
+2 - view -> interface com usuário. 
+3 - model -> Classes de entidades/tabelas.
