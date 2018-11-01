@@ -21,6 +21,10 @@ public class DataSource {
 			port = 1521;
 			username = "gdi";
 			password = "gdi";
+		
+			//String url = "jdbc:oracle:thin:@" + hostname +":"+ port + ":"+ database;
+
+			//connection = DriverManager.getConnection(url, username, password);
 			
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			connection = DriverManager.getConnection("jdbc:oracle:thin:@"+hostname+":"+port+":xe", username, password);
