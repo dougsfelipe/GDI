@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import model.Pessoa;
 
 public class PessoaDAO {
-	private static DataSource datasource;
+	private static DataSource datasource; //datasource para fazer a conexao
 	
 	public PessoaDAO(DataSource datasource) {
 		this.datasource = datasource;
@@ -16,21 +16,22 @@ public class PessoaDAO {
 	
 	public static ArrayList<Pessoa> readAll(){
 		try {
-			String SQL = "SELECT * FROM pessoa";
+			String SQL = "SELECT * FROM pessoa"; //consulta
 			PreparedStatement ps = datasource.getConnection().prepareStatement(SQL);
 			ResultSet rs = ps.executeQuery();
 			
+			/**
+			 * recebe resultados da consulta e armazena no arraylist "lista" que eh retornado
+			*/
 			ArrayList<Pessoa> lista = new ArrayList<Pessoa>();
 			while(rs.next()) {
 				Pessoa pessoa = new Pessoa();
 				pessoa.setCpf(rs.getString("cpf"));
 				
-				pessoa.setNome(rs.getString("nome"));
-				//cli.setEmail(rs.getString("email"));
-				//cli.setTelefone(rs.getString("telefone"));			
+				pessoa.setNome(rs.getString("nome"));			
 				lista.add(pessoa);
 			}
-			ps.close();
+			ps.close(); //fecha statement
 			return lista;
 			
 		} catch (SQLException ex) {
