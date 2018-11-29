@@ -1,0 +1,25 @@
+endereco { 
+font-family: serif;
+font-size: 2em;
+border: 1px solid black;
+background:white;
+color: #003;
+display: block;
+width: 50%;
+margin: 10px;
+}
+
+  rua,numero,complemento,bairro,cidade,estado,pais,cep{ 
+      font-size: large;
+    border-bottom: black 1px solid;
+
+  display: block;
+  margin: 15px;
+  font-size: 0.4em;
+ }
+
+ cadastro{
+     margin: 50px;
+    
+ }
+  

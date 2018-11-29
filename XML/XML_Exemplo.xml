@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+
+<!-- XML demonstration -->
+
+<?xml-stylesheet type="text/css" href="teste.css"?>
+
+
+
+<!-- <xml:template match="endereco">  -->
+
+ 
+<cadastro>
+<endereco>
+<rua>Rua de ogrimmar</rua>
+<numero>666</numero>
+<complemento>complemento4</complemento>
+<bairro>Bairro4</bairro>
+<cidade>Durotar</cidade>
+<estado>Kalimdor</estado>
+<pais>Azeroth</pais>
+<cep>12345678</cep>
+</endereco>
+
+<endereco>
+<rua>Rua de ogrimmar</rua>
+<numero>666</numero>
+<complemento>complemento4</complemento>
+<bairro>Bairro4</bairro>
+<cidade>Durotar</cidade>
+<estado>Kalimdor</estado>
+<pais>Azeroth</pais>
+<cep>12345678</cep>
+</endereco>
+
+
+<endereco>
+<rua>Rua de ogrimmar</rua>
+<numero>666</numero>
+<complemento>complemento4</complemento>
+<bairro>Bairro4</bairro>
+<cidade>Durotar</cidade>
+<estado>Kalimdor</estado>
+<pais>Azeroth</pais>
+<cep>12345678</cep>
+</endereco>
+
+
+
+<endereco>
+<rua>Rua de ogrimmar</rua>
+<numero>666</numero>
+<complemento>complemento4</complemento>
+<bairro>Bairro4</bairro>
+<cidade>Durotar</cidade>
+<estado>Kalimdor</estado>
+<pais>Azeroth</pais>
+<cep>12345678</cep>
+</endereco>
+
+
+<endereco>
+<rua>Rua de ogrimmar</rua>
+<numero>666</numero>
+<complemento>complemento4</complemento>
+<bairro>Bairro4</bairro>
+<cidade>Durotar</cidade>
+<estado>Kalimdor</estado>
+<pais>Azeroth</pais>
+<cep>12345678</cep>
+</endereco>
+
+
+</cadastro>
