@@ -9,65 +9,65 @@
 <!-- <xml:template match="endereco">  -->
 
  
-<cadastro>
+<Buffet>
 <endereco>
 <rua>Rua de ogrimmar</rua>
+<numero>402</numero>
+<complemento>Perto do mercadinho gloria a deux</complemento>
+<bairro>Maranguape 0</bairro>
+<cidade>Paulista</cidade>
+<estado>pernambuco</estado>
+<pais>Brasil</pais>
+<cep>12345678</cep>
+</endereco>
+
+<endereco>
+<rua>Rua de banana fish</rua>
+<numero>24</numero>
+<complemento>Perto do rua do milenio</complemento>
+<bairro>Jardin atlantico</bairro>
+<cidade>Olinda</cidade>
+<estado>Pernambuco</estado>
+<pais>Brasil</pais>
+<cep>57498654</cep>
+</endereco>
+
+
+<endereco>
+<rua>Rua de katya</rua>
 <numero>666</numero>
-<complemento>complemento4</complemento>
-<bairro>Bairro4</bairro>
+<complemento>Perto da avenida despair</complemento>
+<bairro>Curado </bairro>
+<cidade>Recife</cidade>
+<estado>Pernambuco</estado>
+<pais>Brasil</pais>
+<cep>498762515</cep>
+</endereco>
+
+
+
+<endereco>
+<rua>Rua de ikitaishi</rua>
+<numero>54</numero>
+<complemento>Acima da loja de 100 yen</complemento>
+<bairro>Ikebukuro</bairro>
+<cidade>Kyoto</cidade>
+<estado>Tokyo</estado>
+<pais>Japao</pais>
+<cep>5874596</cep>
+</endereco>
+
+
+<endereco>
+<rua>Rua de ogrimmar</rua>
+<numero>5746</numero>
+<complemento>Perto das forjas</complemento>
+<bairro>Siatras</bairro>
 <cidade>Durotar</cidade>
 <estado>Kalimdor</estado>
 <pais>Azeroth</pais>
 <cep>12345678</cep>
 </endereco>
 
-<endereco>
-<rua>Rua de ogrimmar</rua>
-<numero>666</numero>
-<complemento>complemento4</complemento>
-<bairro>Bairro4</bairro>
-<cidade>Durotar</cidade>
-<estado>Kalimdor</estado>
-<pais>Azeroth</pais>
-<cep>12345678</cep>
-</endereco>
 
-
-<endereco>
-<rua>Rua de ogrimmar</rua>
-<numero>666</numero>
-<complemento>complemento4</complemento>
-<bairro>Bairro4</bairro>
-<cidade>Durotar</cidade>
-<estado>Kalimdor</estado>
-<pais>Azeroth</pais>
-<cep>12345678</cep>
-</endereco>
-
-
-
-<endereco>
-<rua>Rua de ogrimmar</rua>
-<numero>666</numero>
-<complemento>complemento4</complemento>
-<bairro>Bairro4</bairro>
-<cidade>Durotar</cidade>
-<estado>Kalimdor</estado>
-<pais>Azeroth</pais>
-<cep>12345678</cep>
-</endereco>
-
-
-<endereco>
-<rua>Rua de ogrimmar</rua>
-<numero>666</numero>
-<complemento>complemento4</complemento>
-<bairro>Bairro4</bairro>
-<cidade>Durotar</cidade>
-<estado>Kalimdor</estado>
-<pais>Azeroth</pais>
-<cep>12345678</cep>
-</endereco>
-
-
-</cadastro>
+</Buffet>

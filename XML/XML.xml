@@ -1,25 +1,45 @@
-1. USO DE XMLTYPE
+--1. USO DE XMLTYPE
 
 Esta implicito nas outras questoes
 
-2.SELECT COM EXPRESSÃO DE CAMINHO
+--2.SELECT COM EXPRESSÃO DE CAMINHO
 
 select c.nome,c.endereco.extract('/endereco/rua/text()').getStringVal() "rua" from tb_cliente c
 
-3.DELETE COM EXPRESSÃO DE CAMINHO
+--3.DELETE COM EXPRESSÃO DE CAMINHO
 
 delete from tb_cliente c where c.endereco.extract('/endereco/rua/text()').getStringVal()='Rua da saude';
 
-4.DELETE COM EXPRESSÃO DE CAMINHO
+--4.DELETE COM EXPRESSÃO DE CAMINHO
 
 update tb_cliente c set endereco =Sys.XMLType.createXML('<endereco><rua>Rua de ogrimmar</rua><numero>666</numero><complemento>complemento4</complemento><bairro>Bairro4</bairro><cidade>Durotar</cidade><estado>Kalimdor</estado><pais>Azeroth</pais><cep>12345678</cep></endereco>')
 where c.cpf='723456789-35';
 
-5.USO DA FUNÇÃO SYS_XMLGEN()
+--5.USO DA FUNÇÃO SYS_XMLGEN()
 
 select sys_xmlgen(nome) as xml from tb_cliente
 
-7.DTD
+--6.USO DE DBMS_XMLGEN
+
+--nao precissa da linha set serveroutput no oracle live
+set serveroutput on;
+DECLARE
+ctx DBMS_XMLGEN.ctxhandle;
+result clob;
+BEGIN
+ctx := DBMS_XMLGEN.newContext('SELECT * FROM tp_endereco');
+DBMS_XMLGEN.setRowsetTag(ctx, 'Buffet');
+DBMS_XMLGEN.setRowTag(ctx,'endereco');
+result := DBMS_XMLGEN.getXML(ctx);
+DBMS_OUTPUT.put_line(result);
+DBMS_XMLGEN.closeContext(ctx);
+END;
+/
+
+
+
+
+--7.DTD
 
 <!DOCTYPE endereco [
 <!ELEMENT endereco (rua,numero,complemento,bairro,cidade,estado,pais,cep)>
